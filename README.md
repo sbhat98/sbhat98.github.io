@@ -3,6 +3,7 @@ Website I am creating to manage ARM2 Monopoly
 
 ## Roll
 display roll button
+<button name="button" onclick="http://www.google.com">Click me</button>
 
 ## Board
 display sample python file output: generateBoard()
