@@ -1,39 +1,166 @@
-<h1 id="armstrong2monopoly">Armstrong 2 Monopoly</h1>
+<!-- The initial layout of this site used the free w3schools template. I modified the template to fit my site -->
+<!DOCTYPE html>
+<html>
+<title>Shishir's Site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://sbhat98.github.io/homepage.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
 
-<p>Website I am creating to manage ARM2 Monopoly</p>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b><!-- Shishir --><br><!-- Bhat --></b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="#aboutme" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Me</a>
+    <a href="#education" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Education</a>
+    <a href="#experience" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Experience</a>
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Me</a>
+  </div>
+</nav>
 
-<h2 id="roll">Roll</h2>
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
 
-<p>display roll button</p>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<p>
-    <button name="button" onclick="http://www.google.com">Click me</button>
-</p>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-<h2 id="board">Board</h2>
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="aboutme">
+    <h1 class="w3-jumbo"><b>Shishir Bhat</b></h1>
+    <h1 class="w3-xxxlarge w3-text-blue"><b>About Me</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
 
-<p>display sample python file output: generateBoard()</p>
+  <!-- Education -->
+  <div class="w3-container" id="education" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Education.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna al</p>
+    <p>Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
 
-<h2 id="standings">Standings</h2>
+  <!-- experience -->
+  <div class="w3-container" id="experience" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Experience.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna al.</p>
+    <p>Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
 
-<p>display sample python file output: generateStandings()</p>
+  <!-- projects -->
+  <div class="w3-container" id="projects" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Packages.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+    <p><b>Some projects I've worked on</b>:</p>
+  </div>
 
-<h2 id="rules">Rules</h2>
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/res/team2.jpg" alt="Shelter Finder image" style="width:100%">
+        <div class="w3-container">
+          <h3>Shelter Finder</h3>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/res/moodnews.JPG" alt="Mood News image" style="width:100%">
+        <div class="w3-container">
+          <h3>Mood News</h3>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team3.jpg" alt="Third Project image" style="width:100%">
+        <div class="w3-container">
+          <h3>Add Third Project Here</h3>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<ul>
-<li>Each room is a property.  Everyone will receive a piece and 10,000 “dollars”.  The PL rooms are safe spaces where you collect 150 dollars for landing on or passing.
-There will be a miniature board in the lounge to show the floor’s layout and showcase the instructions and rules.</li>
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Contact Me</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>Some contact text</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
+    </form>
+  </div>
 
-<li>When you land on a property that hasn’t been purchased yet you can purchase it for the amount listed below or you can not purchase it.  If you land on a property that has been purchased than you’re “eating”  there and have to pay according to the color and how expensive the property is.</li>
+<!-- End page content -->
+</div>
 
-<li>Once you’ve purchased a restaurant you can purchase upgrades outdoor seating (like the house in monopoly) and a michelin star ranked chef (like the hotels in monopoly).  These must be purchased before you move for the day and you can only buy one upgrade per day.</li>
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
 
-<li>The outdoor seating ranges in price depending on the property value. The michelin star ranked chef ranges in price depending on the property value.
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
 
-<ul>
-<li>You cannot purchase outdoor seating or a chef for your property until a turn has passed (you must wait a day).  Additionally, you can only purchase one deck/chef a day.</li></ul>
-</li>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
 
-<li>If you find yourself in need of some cash you can sell your decks and chefs for half of what you bought them for and you can mortgage your house and receive the amount listed below in the chart. If you mortgage your property you will not recieve money when peeps land on it just FYI.</li>
-</ul>
+</body>
+</html>
