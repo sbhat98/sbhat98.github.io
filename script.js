@@ -56,4 +56,4 @@ setInterval(() => {
     if (!index) {
         s = s.then(() => new Promise(r => setTimeout(r, 4000)))
     }
-}, 6000)
+}, 7000)
